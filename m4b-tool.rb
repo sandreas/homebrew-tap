@@ -5,9 +5,9 @@ class M4bTool < Formula
   url "https://github.com/sandreas/m4b-tool/releases/download/v.0.3.1/m4b-tool.tar.gz"
   sha256 "91c0ed60fa240c5cd4faf642d5352b3bdde48bde6af746debff734601c47a393"
 
-  depends_on "php" :build
-  depends_on "mp4v2" :build
-  depends_on 'ffmpeg' :build
+  depends_on "php" => :build
+  depends_on "mp4v2" => :build
+  depends_on "ffmpeg" => :build
   depends_on "fdk-aac-encoder" => :optional
   
   def install

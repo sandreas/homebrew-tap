@@ -6,10 +6,10 @@ class M4bTool < Formula
   url "https://github.com/sandreas/m4b-tool/releases/download/v.0.3.1/m4b-tool.tar.gz"
   sha256 "91c0ed60fa240c5cd4faf642d5352b3bdde48bde6af746debff734601c47a393"
 
-  depends_on "php" => :build
-  depends_on "mp4v2" => :build
+  depends_on "php"
+  depends_on "mp4v2"
   depends_on "ffmpeg" => ["with-chromaprint", "with-fdk-aac", "with-freetype", "with-libass", "with-sdl2", "with-freetype", "with-libquvi", "with-libvorbis", "with-libquvi", "with-libvpx", "with-opus", "with-x265"]
-  depends_on "fdk-aac-encoder" => :recommended
+  depends_on "fdk-aac-encoder"
   
   def install
     bin.install "m4b-tool.phar" => "m4b-tool"

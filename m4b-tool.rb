@@ -1,4 +1,5 @@
 # brew tap sandreas/tap
+# brew install m4b-tool
 class M4bTool < Formula
   desc "m4b-tool is a command line utility to merge, split and chapterize audiobook files such as mp3, ogg, flac, m4a or m4b"
   homepage "m4b-tool.fynder.de"
@@ -7,8 +8,8 @@ class M4bTool < Formula
 
   depends_on "php" => :build
   depends_on "mp4v2" => :build
-  depends_on "ffmpeg" => :build
-  depends_on "fdk-aac-encoder" => :optional
+  depends_on "ffmpeg" => ["with-chromaprint", "with-fdk-aac", "with-freetype", "with-libass", "with-sdl2", "with-freetype", "with-libquvi", "with-libvorbis", "with-libquvi", "with-libvpx", "with-opus", "with-x265"]
+  depends_on "fdk-aac-encoder" => :recommended
   
   def install
     bin.install "m4b-tool.phar" => "m4b-tool"

@@ -8,7 +8,7 @@ class M4bTool < Formula
 
   depends_on "php"
   depends_on "mp4v2"
-  depends_on "varenc/ffmpeg"
+  depends_on "varenc/ffmpeg/ffmpeg"
   depends_on "fdk-aac-encoder"
   
   def install

@@ -8,7 +8,7 @@ class M4bTool < Formula
 
   depends_on "php"
   depends_on "mp4v2"
-  depends_on "ffmpeg" => ["with-chromaprint", "with-fdk-aac", "with-freetype", "with-libass"]
+  depends_on "ffmpeg"
   depends_on "fdk-aac-encoder"
   
   def install

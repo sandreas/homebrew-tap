@@ -4,7 +4,7 @@ class M4bTool < Formula
   desc "m4b-tool is a command line utility to merge, split and chapterize audiobook files such as mp3, ogg, flac, m4a or m4b"
   homepage "m4b-tool.fynder.de"
   url "https://github.com/sandreas/m4b-tool/releases/download/v.0.4.0/m4b-tool.tar.gz"
-  sha256 "3a29da8529c4f17d41c9a1747b4517b316c92562f559d5945f697dc0646c02fc"
+  sha256 "6cb0d27e3b6c518d7a22722aac3d18b1a363802491500fa0e86c017820d261e2"
 
   depends_on "php"
   depends_on "mp4v2"

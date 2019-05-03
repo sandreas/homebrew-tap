@@ -3,8 +3,8 @@
 class M4bTool < Formula
   desc "m4b-tool is a command line utility to merge, split and chapterize audiobook files such as mp3, ogg, flac, m4a or m4b"
   homepage "m4b-tool.fynder.de"
-  url "https://github.com/sandreas/m4b-tool/releases/download/v.0.3.3/m4b-tool.tar.gz"
-  sha256 "b40e32622041e0d193c73f20ee55910ebd4854f20e836f3e0f784c6d25d2b562"
+  url "https://github.com/sandreas/m4b-tool/releases/download/v.0.4.0/m4b-tool.tar.gz"
+  sha256 "3a29da8529c4f17d41c9a1747b4517b316c92562f559d5945f697dc0646c02fc"
 
   depends_on "php"
   depends_on "mp4v2"
@@ -16,7 +16,7 @@ class M4bTool < Formula
   end
   
   test do
-    assert_equal "m4b-tool v.0.3.3", shell_output("#{bin}/m4b-tool --version").chomp
+    assert_equal "m4b-tool v.0.4.0", shell_output("#{bin}/m4b-tool --version").chomp
   end
 
 end

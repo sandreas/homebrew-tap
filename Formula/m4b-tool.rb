@@ -7,7 +7,7 @@ class M4bTool < Formula
   sha256 "0ec79733770379dbd11ea9d76fd03d62d8aacca8e66730779f7caaa92f577ba7"
 
   depends_on "php"
-  depends_on "mp4v2"
+  depends_on "sandreas/mp4v2"
   depends_on "varenc/ffmpeg/ffmpeg"
   depends_on "fdk-aac-encoder"
 

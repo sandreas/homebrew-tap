@@ -16,6 +16,6 @@ class Mp4v2 < Formula
   end
 
   test do
-    assert_match version.to_s, shell_output("#{bin}/mp4art --version")
+    assert_match "mp4tags - MP4v2 -r", shell_output("#{bin}/mp4art --version")
   end
 end

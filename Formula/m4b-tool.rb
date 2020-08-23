@@ -9,8 +9,8 @@ class M4bTool < Formula
 
   depends_on "php"
   depends_on "sandreas/tap/mp4v2"
-  depends_on "homebrew-ffmpeg/ffmpeg/ffmpeg" => 'with-fdk-aac'
   depends_on "fdk-aac-encoder"
+  # depends_on "homebrew-ffmpeg/ffmpeg/ffmpeg" => 'with-fdk-aac'
 
   def install
     bin.install "m4b-tool.phar" => "m4b-tool"

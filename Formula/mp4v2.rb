@@ -6,7 +6,7 @@ class Mp4v2 < Formula
   desc "Read, create, and modify MP4 files"
   homepage "https://github.com/sandreas/mp4v2"
   url "https://github.com/sandreas/mp4v2/tarball/master"
-  sha256 "a878f352122fa84b9cd506603a703e2ab7ae19240f34fe9c0931bfc25003eb53"
+  sha256 "c1f05db85c4c9bc631f0e312b08b9d3ea88f12d4d69f1896a49b6a7e96812b8c"
 
   conflicts_with "bento4",
     :because => "both install `mp4extract` and `mp4info` binaries"

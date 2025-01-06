@@ -1,11 +1,11 @@
 # brew tap sandreas/tap
 # brew install m4b-tool
 class M4bTool < Formula
-  version "pre-release"
+  version "0.5.0"
   desc "m4b-tool is a command line utility to merge, split and chapterize audiobook files such as mp3, ogg, flac, m4a or m4b"
   homepage "https://github.com/sandreas/m4b-tool"
-  url "https://github.com/sandreas/m4b-tool/files/10728378/m4b-tool.tar.gz"
-  sha256 "181fb3e332849ea704ef860aaabaf9dcab2fdab298ffba99e66d31efa18b02f2"
+  url "https://github.com/sandreas/m4b-tool/releases/download/v0.5.0/m4b-tool-0.5.0.tar.gz"
+  sha256 "341c3fcf68a9e371115ecdf10a72a563daaefa4a8b9fe9ab39e1158bc32a0514"
 
   depends_on "php"
   depends_on "sandreas/tap/mp4v2"
@@ -19,5 +19,4 @@ class M4bTool < Formula
   test do
     assert_equal "m4b-tool v.#{version}", shell_output("#{bin}/m4b-tool --version").chomp
   end
-
 end

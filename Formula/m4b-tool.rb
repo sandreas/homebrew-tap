@@ -8,7 +8,7 @@ class M4bTool < Formula
   sha256 "341c3fcf68a9e371115ecdf10a72a563daaefa4a8b9fe9ab39e1158bc32a0514"
 
   depends_on "php"
-  depends_on "sandreas/tap/mp4v2"
+  depends_on "mp4v2"
   depends_on "fdk-aac-encoder"
   # depends_on "homebrew-ffmpeg/ffmpeg/ffmpeg" => 'with-fdk-aac'
 
